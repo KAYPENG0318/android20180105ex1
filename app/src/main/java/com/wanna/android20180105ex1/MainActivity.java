@@ -161,12 +161,12 @@ public class MainActivity extends AppCompatActivity {
         builder.setTitle("This is title");
         LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
         View v1= inflater.inflate(R.layout.layout1,null);
-        final TextView tv4 = v1.findViewById(R.id.textView5);
+        final TextView tv = v1.findViewById(R.id.textView5);
         Button btn1= v1.findViewById(R.id.button7);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv4.setText("hello world");
+                tv.setText("hello world");
             }
         });
         builder.setView(v1);
